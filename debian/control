@@ -1,0 +1,21 @@
+Source: python-django-appconf
+Section: python
+Priority: extra
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Julien Danjou <acid@debian.org>,
+           Thomas Goirand <zigo@debian.org>,
+           Ghe Rivero <ghe.rivero@stackops.com>,
+           Mehdi Abaakouk <sileht@sileht.net>
+Build-Depends: debhelper (>= 8), python-setuptools, python-all (>= 2.6.6-3~), python-django (>= 1.1)
+Standards-Version: 3.9.3
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-appconf.git;a=summary
+Vcs-Git: git://anonscm.debian.org/openstack/python-django-appconf.git
+Homepage: http://pypi.python.org/pypi/django-appconf/
+
+Package: python-appconf
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-django (>= 1.1)
+Provides: ${python:Provides}
+Description: helper class for handling configuration defaults of packaged apps gracefully.
+ Django-appconf provides a helper class for handling configuration defaults of
+ packaged apps gracefully.

@@ -1,0 +1,5 @@
+python-django-appconf (0.5-1) experimental; urgency=low
+
+  * Initial release.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 14 Oct 2012 11:45:53 +0000
