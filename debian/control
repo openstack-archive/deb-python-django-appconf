@@ -17,6 +17,7 @@ Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: ${python:Depends}, ${misc:Depends}, python-django (>= 1.1)
 Provides: ${python:Provides}
-Description: helper class for handling configuration defaults of packaged apps gracefully.
- Django-appconf provides a helper class for handling configuration defaults of
- packaged apps gracefully.
+Description: helper class for handling configuration defaults of packaged apps gracefully
+ Say you have an app with a few defaults, which you want to refer to in the
+ app's code without repeating yourself all the time. Django-appconf provides
+ a simple helper class to implement those defaults. 
