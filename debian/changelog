@@ -1,3 +1,9 @@
+python-django-appconf (0.5-2) unstable; urgency=low
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 13 May 2013 07:57:13 +0000
+
 python-django-appconf (0.5-1) experimental; urgency=low
 
   * Initial release.
