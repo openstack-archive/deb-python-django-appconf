@@ -2,15 +2,16 @@ Source: python-django-appconf
 Section: python
 Priority: extra
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
-Uploaders: Julien Danjou <acid@debian.org>,
-           Thomas Goirand <zigo@debian.org>,
-           Ghe Rivero <ghe.rivero@stackops.com>,
-           Mehdi Abaakouk <sileht@sileht.net>
+Uploaders: Thomas Goirand <zigo@debian.org>
 Build-Depends: debhelper (>= 8),
                openstack-pkg-tools,
                python-all (>= 2.6.6-3~),
                python-django (>= 1.1),
-               python-setuptools
+               python-setuptools,
+               python3-all (>= 3.2),
+               python3-django,
+               python3-setuptools,
+               python-sphinx
 Standards-Version: 3.9.3
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-appconf.git;a=summary
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-appconf.git
@@ -19,9 +20,35 @@ Homepage: http://pypi.python.org/pypi/django-appconf/
 Package: python-appconf
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: python-django (>= 1.1), ${misc:Depends}, ${python:Depends}
+Depends: python-django, ${misc:Depends}, ${python:Depends}
 Provides: ${python:Provides}
-Description: helper class for handling configuration defaults of packaged apps gracefully
+Description: helper class handling configuration defaults of apps - Python 2.x
  Say you have an app with a few defaults, which you want to refer to in the
  app's code without repeating yourself all the time. Django-appconf provides
  a simple helper class to implement those defaults.
+ .
+ This package provides the Python 2.x module.
+
+Package: python3-appconf
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: python3-django, ${misc:Depends}, ${python3:Depends}
+Provides: ${python3:Provides}
+Description: helper class handling configuration defaults of apps - Python 3.x
+ Say you have an app with a few defaults, which you want to refer to in the
+ app's code without repeating yourself all the time. Django-appconf provides
+ a simple helper class to implement those defaults.
+ .
+ This package provides the Python 3.x module.
+
+Package: python-appconf-doc
+Section: doc
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)   
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Description: helper class handling configuration defaults of apps - doc
+ Say you have an app with a few defaults, which you want to refer to in the
+ app's code without repeating yourself all the time. Django-appconf provides
+ a simple helper class to implement those defaults.
+ .
+ This package contains the documentation.
