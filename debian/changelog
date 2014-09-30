@@ -2,6 +2,7 @@ python-django-appconf (0.5-3) unstable; urgency=low
 
   * Ran wrap-and-sort.
   * Added Python3 and -doc packages.
+  * Standards-Version is now 3.9.5.
 
  -- Thomas Goirand <zigo@debian.org>  Thu, 30 May 2013 13:49:50 +0800
 

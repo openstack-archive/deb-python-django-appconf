@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 8),
                python3-django,
                python3-setuptools,
                python-sphinx
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-appconf.git;a=summary
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-appconf.git
 Homepage: http://pypi.python.org/pypi/django-appconf/
