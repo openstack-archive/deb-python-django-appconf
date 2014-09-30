@@ -4,13 +4,13 @@ Source: https://github.com/jezdez/django-appconf.git
 
 Files: debian/*
 Copyright: (c) 2012, Thomas Goirand <zigo@debian.org>
-License: BSD
+License: BSD-3-clause
 
 Files: *
 Copyright: Copyright (c) 2011-2012, Jannis Leidel and individual contributors
-License: BSD
+License: BSD-3-clause
 
-License: BSD
+License: BSD-3-clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
      * Redistributions of source code must retain the above copyright

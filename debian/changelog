@@ -3,6 +3,7 @@ python-django-appconf (0.5-3) unstable; urgency=low
   * Ran wrap-and-sort.
   * Added Python3 and -doc packages.
   * Standards-Version is now 3.9.5.
+  * Fix s/BSD/BSD-3-clause/ in debian/copyright.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 30 Sep 2014 03:41:16 +0000
 
