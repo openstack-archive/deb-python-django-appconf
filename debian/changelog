@@ -1,3 +1,9 @@
+python-django-appconf (0.5-4) unstable; urgency=medium
+
+  * Adds Suggests: python-appconf-doc (Closes: #764807, #764837).
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 12 Oct 2014 04:42:44 +0000
+
 python-django-appconf (0.5-3) unstable; urgency=low
 
   * Ran wrap-and-sort.
