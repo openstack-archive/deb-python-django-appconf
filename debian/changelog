@@ -1,6 +1,7 @@
 python-django-appconf (0.5-4) unstable; urgency=medium
 
   * Adds Suggests: python-appconf-doc (Closes: #764807, #764837).
+  * Standards-Version is now 3.9.6 (no change).
 
  -- Thomas Goirand <zigo@debian.org>  Sun, 12 Oct 2014 04:42:44 +0000
 
