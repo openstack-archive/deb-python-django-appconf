@@ -3,7 +3,7 @@ Section: python
 Priority: extra
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Uploaders: Thomas Goirand <zigo@debian.org>,
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                dh-python,
                openstack-pkg-tools,
                python-all,
@@ -18,7 +18,7 @@ Build-Depends-Indep: python-django,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-appconf.git;a=summary
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-appconf.git
-Homepage: http://pypi.python.org/pypi/django-appconf/
+Homepage: https://github.com/jezdez-archive/django-appconf
 
 Package: python-appconf
 Architecture: all
