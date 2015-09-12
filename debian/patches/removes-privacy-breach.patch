@@ -1,0 +1,18 @@
+Description: Removes privacy breach
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2015-09-12
+
+--- python-django-appconf-1.0.1.orig/README.rst
++++ python-django-appconf-1.0.1/README.rst
+@@ -1,10 +1,6 @@
+ django-appconf
+ ==============
+ 
+-.. image:: https://secure.travis-ci.org/jezdez/django-appconf.png?branch=develop
+-    :alt: Build Status
+-    :target: http://travis-ci.org/jezdez/django-appconf
+-
+ A helper class for handling configuration defaults of packaged Django
+ apps gracefully.
+ 
