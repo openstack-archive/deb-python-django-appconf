@@ -42,8 +42,8 @@ simply pass the value when instantiating the ``AppConf`` class::
 
     myapp_settings = MyAppConf(SETTING_1='something completely different')
 
-    if 'different' in myapp_settings.SETTINGS_1:
-        print 'yay, I'm different!'
+    if 'different' in myapp_settings.SETTING_1:
+        print "yay, I'm different!"
 
 Custom configuration
 --------------------
@@ -72,7 +72,7 @@ or the override value from the global settings as the only parameter.
 The method **must return** the value to be use for the setting in
 question.
 
-After each of the ``*_configure`` methods have been called, the ``AppConf``
+After each of the ``configure_*`` methods has been called, the ``AppConf``
 class will additionally call a main ``configure`` method, which can
 be used to do any further custom configuration handling, e.g. if multiple
 settings depend on each other. For that a ``configured_data`` dictionary
@@ -93,3 +93,9 @@ is provided in the setting instance::
             enabled = self.configured_data['ENABLED']
             if not enabled and mode != 'development':
                 print "WARNING: app not enabled in %s mode!" % mode
+            return self.configured_data
+
+.. note::
+
+    Don't forget to return the configured data in your custom ``configure``
+    method if you edit it.

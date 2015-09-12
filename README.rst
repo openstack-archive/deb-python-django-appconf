@@ -1,8 +1,22 @@
 django-appconf
 ==============
 
+.. image:: https://secure.travis-ci.org/jezdez/django-appconf.png?branch=develop
+    :alt: Build Status
+    :target: http://travis-ci.org/jezdez/django-appconf
+
 A helper class for handling configuration defaults of packaged Django
 apps gracefully.
+
+.. note::
+
+    This app precedes Django's own AppConfig_ classes that act as
+    "objects [to] store metadata for an application" inside Django's
+    app loading mechanism. In other words, they solve a related but
+    different use case than django-appconf and can't easily be used
+    as a replacement. The similarity in name is purely coincidental.
+
+.. _AppConfig: https://docs.djangoproject.com/en/stable/ref/applications/#django.apps.AppConfig
 
 Overview
 --------
@@ -69,7 +83,7 @@ In case you want to use a different settings object instead of the default
             holder = 'acme.conf.settings'
 
 If you ship an ``AppConf`` class with your reusable Django app, it's
-recommended to put it in a ``conf.py`` file of you app package and
+recommended to put it in a ``conf.py`` file of your app package and
 import ``django.conf.settings`` in it, too::
 
     from django.conf import settings

@@ -1,6 +1,37 @@
 Changelog
 =========
 
+1.0 (2015-02-15)
+----------------
+
+.. note::
+
+    This app precedes Django's own AppConfig_ classes that act as
+    "objects [to] store metadata for an application" inside Django's
+    app loading mechanism. In other words, they solve a related but
+    different use case than django-appconf and can't easily be used
+    as a replacement. The similarity in name is purely coincidental.
+
+* Dropped support of Python 2.5.
+
+* Added support for Django 1.7 and 1.8.
+
+* Modernized test setup.
+
+.. _AppConfig: https://docs.djangoproject.com/en/stable/ref/applications/#django.apps.AppConfig
+
+0.6 (2013-01-28)
+----------------
+
+* Added ``required`` attribute to ``Meta`` to be able to specify which
+  settings are required to be set.
+
+* Moved to Travis for the tests: http://travis-ci.org/jezdez/django-appconf
+
+* Stopped support for Django 1.2.X.
+
+* Introduced support for Python >= 3.2.
+
 0.5 (2012-02-20)
 ----------------
 

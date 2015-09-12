@@ -6,7 +6,7 @@ from setuptools import setup
 
 def read(*parts):
     file_path = path.join(path.dirname(__file__), *parts)
-    return open(file_path).read()
+    return codecs.open(file_path, encoding='utf-8').read()
 
 
 def find_version(*parts):
@@ -28,21 +28,23 @@ setup(
     author_email='jannis@leidel.info',
     license='BSD',
     url='http://django-appconf.readthedocs.org/',
-    packages=[
-        'appconf',
-        'appconf.tests',
-    ],
+    packages=['appconf'],
+    install_requires=['six'],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
         'Topic :: Utilities',
     ],
 )
