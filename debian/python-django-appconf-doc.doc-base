@@ -5,5 +5,5 @@ Abstract: Sphinx documentation for django-appconf
 Section: Programming/Python
 
 Format: HTML
-Index: /usr/share/doc/python-appconf-doc/html/index.html
-Files: /usr/share/doc/python-appconf-doc/html/*
+Index: /usr/share/doc/python-django-appconf-doc/html/index.html
+Files: /usr/share/doc/python-django-appconf-doc/html/*

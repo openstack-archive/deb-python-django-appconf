@@ -12,11 +12,11 @@ include /usr/share/openstack-pkg-tools/pkgos.make
 override_dh_auto_install:
 	set -e ; for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
-			--root $(CURDIR)/debian/python-appconf; \
+			--root $(CURDIR)/debian/python-django-appconf; \
 	done
 	set -e ; for pyvers in $(PYTHON3S); do \
 		python$$pyvers setup.py install --install-layout=deb \
-			--root $(CURDIR)/debian/python3-appconf; \
+			--root $(CURDIR)/debian/python3-django-appconf; \
 	done
 
 override_dh_auto_test:
@@ -30,7 +30,7 @@ ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 endif
 
 override_dh_sphinxdoc:
-	sphinx-build -b html docs debian/python-appconf-doc/usr/share/doc/python-appconf-doc/html
+	sphinx-build -b html docs debian/python-django-appconf-doc/usr/share/doc/python-django-appconf-doc/html
 	dh_sphinxdoc -O--buildsystem=python_distutils
 
 # Commands not to run
