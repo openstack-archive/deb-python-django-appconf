@@ -87,9 +87,9 @@ Section: doc
 Architecture: all
 Depends: ${misc:Depends},
          ${sphinxdoc:Depends},
-Breaks: python3-appconf-doc (<< 1.0.1-3~),
-Replaces: python3-appconf-doc (<< 1.0.1-3~),
-Provides: python3-appconf-doc,
+Breaks: python-appconf-doc (<< 1.0.1-3~),
+Replaces: python-appconf-doc (<< 1.0.1-3~),
+Provides: python-appconf-doc,
 Description: helper class handling configuration defaults of apps - doc
  Say you have an app with a few defaults, which you want to refer to in the
  app's code without repeating yourself all the time. Django-appconf provides
