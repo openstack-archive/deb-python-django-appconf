@@ -3,7 +3,7 @@
 PYTHONS:=$(shell pyversions -vr)
 PYTHON3S:=$(shell py3versions -vr)
 
-UPSTREAM_GIT = git://github.com/jezdez-archive/django-appconf.git
+UPSTREAM_GIT := https://github.com/jezdez-archive/django-appconf.git
 include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
