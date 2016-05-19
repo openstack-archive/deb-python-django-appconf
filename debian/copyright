@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: python-django-appconf
-Source: git://github.com/jezdez-archive/django-appconf.git
+Source: https://github.com/jezdez-archive/django-appconf
 
 Files: debian/*
 Copyright: (c) 2012, Thomas Goirand <zigo@debian.org>
