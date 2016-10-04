@@ -1,4 +1,4 @@
-python-django-appconf (1.0.1-5) UNRELEASED; urgency=medium
+python-django-appconf (1.0.1-5) unstable; urgency=medium
 
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
